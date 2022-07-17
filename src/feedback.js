@@ -89,7 +89,7 @@ module.exports = {
     }
 
     for (let currentPage = 1; currentPage <= totalPages; currentPage++) {
-      const feedbackUrl = `https://feedback.aliexpress.com/display/productEvaluation.htm?v=2&page=${currentPage}&currentPage=${currentPage}&productId=${productId}&ownerMemberId=${ownerMemberId}`;
+      const feedbackUrl = `https://feedback.aliexpress.com/display/productEvaluation.htm?v=2&page=${currentPage}&currentPage=${currentPage}&productId=${productId}&ownerMemberId=${ownerMemberId}&translate=N`;
       const feedbackResponse = await fetch(feedbackUrl);
       const feedbackHtml = await feedbackResponse.text();
 

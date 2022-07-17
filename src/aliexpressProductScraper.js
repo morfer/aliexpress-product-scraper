@@ -10,7 +10,7 @@ async function AliexpressProductScraper(productId, feedbackLimit) {
   const page = await browser.newPage();
 
   /** Scrape the aliexpress product page for details */
-  await page.goto(`https://www.aliexpress.com/item/${productId}.html`);
+  await page.goto(`https://pt.aliexpress.com/item/${productId}.html`);
   const aliExpressData = await page.evaluate(() => runParams);
 
   const data = aliExpressData.data;
